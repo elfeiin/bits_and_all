@@ -1,0 +1,12 @@
+{
+    "section1": {
+        "type": "section",
+        "description": "Display"
+    },
+    "use-decimal-point" : {
+        "type" : "switch",
+        "default" : false,
+        "description": "Show seconds separated by decimal point",
+        "tooltip": "Enable this to show seconds separated by a decimal point."
+    }
+}
