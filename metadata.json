@@ -1,0 +1,7 @@
+{
+    "uuid": "kilotime@elfein",
+    "name": "Kilotime",
+    "description": "Better clock than whatever the rest of the world is using.",
+    "version": "0.1",
+    "max-instances": -1
+}
