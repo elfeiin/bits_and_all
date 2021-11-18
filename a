@@ -1,0 +1,31 @@
+pub struct Spot {
+    x: usize,
+    y: usize,
+}
+
+pub struct Size {
+    w: usize,
+    h: usize,
+}
+
+pub struct Bounds<'a> {
+    size: Size,
+    buf: &'a [u8],
+}
+
+pub trait Element {
+    fn draw(&self, out: Bounds, constraints: (Spot, Size));
+    fn size(&self) -> Size;
+}
+
+pub struct Menu {
+    entries: Vec<dyn Element>,
+}
+
+impl Element for Menu {
+    fn draw(&self, constraints: Size) -> Vec<String> {
+    }
+    fn size(&self) -> Size {
+
+    }
+}
