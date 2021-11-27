@@ -93,7 +93,7 @@ impl<'a> AppState<'a> {
 	fn open() {}
 	pub fn draw(&mut self) -> CTRes<()> {
 		queue![self.out, Clear(ClearType::All)]?;
-		match self.state {
+		match &self.state {
 			State::Base => {}
 			State::Menu { selection } => {}
 		}
@@ -105,8 +105,8 @@ impl<'a> AppState<'a> {
 fn main() {
 	// let mut app_state = AppState::new();
 
-	use elements::*;
-	let f = Flex::new::row();
+	// use widget::*;
+	// let f = Flex::new::row();
 
 	loop {
 		// app_state.draw();
