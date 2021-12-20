@@ -10,6 +10,11 @@ impl Size {
         height: 0,
     };
 
+    pub const MAX: Self = Self {
+        width: usize::MAX,
+        height: usize::MAX,
+    };
+
     pub fn new(width: usize, height: usize) -> Self {
         Self { width, height }
     }

@@ -12,7 +12,7 @@ impl BoxConstraints {
     /// Can be satisfied by any nonnegative size.
     pub const BIG: BoxConstraints = BoxConstraints {
         min: Size::ZERO,
-        max: Size::new(usize::MAX as usize, usize::MAX as usize),
+        max: Size::MAX,
     };
 
     /// Create a new box constraints object.

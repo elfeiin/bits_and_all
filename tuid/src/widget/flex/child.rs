@@ -15,7 +15,7 @@ pub enum Child<T> {
     FixedSpacer(
         // KeyOrValue<f64>,
         usize,
-        f64,
+        usize,
     ),
     FlexedSpacer(f64, f64),
 }
